@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>National Science Challenge BD 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Hind Siliguri',sans-serif}
+:root{--bg:#070f1f;--card:#111d36;--primary:#00e5ff;--green:#22c55e;--text:#e2e8f0}
+body{background:var(--bg);color:var(--text);line-height:1.6}
+nav{display:flex;justify-content:space-between;align-items:center;padding:14px 5%;background:rgba(7,15,31,.9);backdrop-filter:blur(10px);position:sticky;top:0;z-index:100;border-bottom:1px solid #1e293b}
+.logo{display:flex;align-items:center;gap:12px;font-size:22px;font-weight:800;color:var(--primary)}
+.logo img{width:48px;height:48px;border-radius:50%;border:2px solid var(--primary);background:#fff;object-fit:cover}
+.logo span{color:var(--green)}
+.btn{padding:12px 22px;border-radius:10px;border:0;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;transition:.2s}
+.btn-p{background:var(--primary);color:#000} .btn-g{background:var(--green);color:#000} .btn-o{border:1px solid #334155;color:#fff;background:transparent}
+.btn:hover{transform:translateY(-2px)}
+.hero{padding:80px 5% 60px;text-align:center;background:radial-gradient(600px at 50% 0%, #1e3a8a 0%, transparent 70%)}
+.hero .hero-logo{width:120px;height:120px;border-radius:50%;border:4px solid var(--primary);margin:0 auto 20px;display:block;background:#fff;box-shadow:0 0 30px rgba(0,229,255,.4)}
+.hero h1{font-size:50px;line-height:1.1;font-weight:800} .hero h1 span{background:linear-gradient(90deg,#00e5ff,#22c55e);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{max-width:700px;margin:16px auto;color:#94a3b8;font-size:18px}
+.stats{display:flex;gap:16px;justify-content:center;margin-top:28px;flex-wrap:wrap}
+.stat{background:var(--card);border:1px solid #1e293b;padding:14px 20px;border-radius:12px;min-width:140px}
+.stat b{font-size:24px;display:block;color:var(--primary)}
+.container{max-width:1100px;margin:0 auto;padding:0 5%}
+.section{padding:60px 0}
+.grid{display:grid;gap:18px} .grid-3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--card);border:1px solid #1e293b;border-radius:16px;padding:22px}
+.badge{display:inline-block;background:#0e2a3a;color:var(--primary);padding:4px 10px;border-radius:99px;font-size:12px;font-weight:700;margin-bottom:10px}
+h2.sec{font-size:32px;text-align:center;margin-bottom:30px}
+.timeline{display:flex;gap:16px;overflow:auto;padding-bottom:10px}
+.step{min-width:220px;background:var(--card);border-radius:14px;padding:18px;border:1px solid #1e293b;text-align:center}
+.step .num{width:36px;height:36px;background:var(--primary);color:#000;border-radius:50%;display:grid;place-items:center;margin:0 auto 10px;font-weight:800}
+footer{background:#020617;padding:40px 5%;margin-top:40px;border-top:1px solid #1e293b;text-align:center;color:#64748b}
+input{width:100%;padding:12px;border-radius:10px;background:#0f172a;border:1px solid #334155;color:#fff;margin-top:8px}
+@media(max-width:600px){.hero h1{font-size:32px}.logo{font-size:18px}.logo img{width:38px;height:38px}}
+</style>
+</head>
+<body>
+<nav>
+<div class="logo"><img src="logo.png" alt="NSC BD Logo" onerror="this.src='https://via.placeholder.com/48/00e5ff/000000?text=NSC'"> NSC <span>BD</span></div>
+<div style="display:flex;gap:10px"><a href="#about" class="btn btn-o">About</a><a href="#register" class="btn btn-p">Register</a></div>
+</nav>
+
+<section class="hero">
+<img class="hero-logo" src="logo.png" alt="NSC BD" onerror="this.style.display='none'">
+<span class="badge">🔥 REGISTRATION OPEN - 2026</span>
+<h1>National Science<br><span>Challenge BD</span></h1>
+<p>বাংলাদেশের ক্লাস 6-10 এর শিক্ষার্থীদের জন্য সবচেয়ে বড় অনলাইন বিজ্ঞান প্রতিযোগিতা। ৫০০০+ প্রশ্ন, লাইভ লিডারবোর্ড, সার্টিফিকেট ও পুরস্কার!</p>
+<div style="margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+<a href="#register" class="btn btn-g">এখনই রেজিস্ট্রেশন করো 🚀</a>
+<a href="#how" class="btn btn-o">কিভাবে কাজ করে?</a>
+</div>
+<div class="stats">
+<div class="stat"><b>5000+</b>Questions</div><div class="stat"><b>5</b>Classes</div><div class="stat"><b>50k+</b>Students</div><div class="stat"><b>100%</b>Free</div>
+</div>
+</section>
+
+<div class="container">
+<section id="about" class="section">
+<h2 class="sec">কি থাকছে?</h2>
+<div class="grid grid-3">
+<div class="card"><span class="badge">PHYSICS • CHEMISTRY • BIOLOGY</span><h3>📚 বিষয়ভিত্তিক চ্যালেঞ্জ</h3><p>Physics, Chemistry, Biology, General Science - আলাদা আলাদা ক্যাটাগরিতে পরীক্ষা দাও।</p></div>
+<div class="card"><span class="badge">LIVE RANKING</span><h3>🏆 লাইভ লিডারবোর্ড</h3><p>সারা বাংলাদেশের মধ্যে তোমার র‍্যাংক দেখো রিয়েল টাইমে।</p></div>
+<div class="card"><span class="badge">CERTIFICATE</span><h3>🎓 সার্টিফিকেট ও পুরস্কার</h3><p>Top 100 জন পাবে প্রফেশনাল সার্টিফিকেট, Top 10 পাবে ক্রেস্ট ও বই।</p></div>
+</div>
+</section>
+
+<section id="how" class="section">
+<h2 class="sec">কিভাবে অংশ নেবে?</h2>
+<div class="timeline">
+<div class="step"><div class="num">1</div><h3>রেজিস্ট্রেশন</h3><p>নাম, ক্লাস, স্কুল দিয়ে ফ্রি রেজিস্ট্রেশন</p></div>
+<div class="step"><div class="num">2</div><h3>পরীক্ষা দাও</h3><p>20টি MCQ, 30 সেকেন্ড প্রতি প্রশ্ন</p></div>
+<div class="step"><div class="num">3</div><h3>র‍্যাংক দেখো</h3><p>সাথে সাথে রেজাল্ট ও সার্টিফিকেট</p></div>
+</div>
+</section>
+
+<section id="register" class="section card">
+<h2 style="text-align:center">📝 Early Registration</h2>
+<p style="text-align:center;color:#94a3b8">প্রশ্ন আপলোড হওয়ার আগেই রেজিস্ট্রেশন করে রাখো</p>
+<div style="max-width:400px;margin:20px auto">
+<input id="rName" placeholder="তোমার নাম">
+<input id="rClass" placeholder="ক্লাস (যেমন: 9)">
+<input id="rPhone" placeholder="মোবাইল নাম্বার">
+<button class="btn btn-g" style="width:100%;margin-top:14px" onclick="reg()">Register Now - Free</button>
+<p id="rMsg" style="text-align:center;margin-top:12px;color:var(--green);font-weight:700"></p>
+</div>
+</section>
+</div>
+
+<footer>
+<p><b>National Science Challenge BD</b> • Organized by Yeasin Mahmudy<br>Contact: yeasinmahmudy05@gmail.com | Ukhiya, Cox's Bazar<br><br>© 2026 All Rights Reserved</p>
+</footer>
+
+<script>
+function reg(){
+ let n=document.getElementById('rName').value;
+ if(!n){alert('নাম দাও ভাই!');return}
+ document.getElementById('rMsg').innerText='✅ ধন্যবাদ '+n+'! রেজিস্ট্রেশন সফল!';
+ localStorage.setItem('nsc_user',n);
+}
+</script>
+</body>
+</html>
